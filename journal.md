@@ -5,5 +5,5 @@ Today, on May 14th 2021, I start my interview preparation journey -- a marathon 
 I commit to solve at least two problems every day for the next 6 months or until the problem set is finished and push my solutions and written progress to this repository.
 
 ## May 14, 2021:
-- Problem: [Reverse an array or a string](https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/) -- [My solution](https://github.com/ak7588/interviewPrep/blob/main/reverseArray.py)
-- Problem: [Find the middle element of a stack](https://www.geeksforgeeks.org/design-a-stack-with-find-middle-operation/) -- [My solution](https://github.com/ak7588/interviewPrep/blob/main/midStack.py)
+- Problem: [Reverse an array or a string](https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/). My [solution](https://github.com/ak7588/interviewPrep/blob/main/reverseArray.py)
+- Problem: [Find the middle element of a stack](https://www.geeksforgeeks.org/design-a-stack-with-find-middle-operation/). My [solution](https://github.com/ak7588/interviewPrep/blob/main/midStack.py)
