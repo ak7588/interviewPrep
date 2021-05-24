@@ -5,3 +5,4 @@ Graduate School List:
 4. [MSc Comp Sci](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc) - financial aid available financial aid available through disability scholarship [here](https://www.ucl.ac.uk/students/support-and-wellbeing/disability-support/funding-support-disabled-students#International%20students)
 5. [Snowdon Masters Scholarship in the UK for disabled students](https://www.snowdontrust.org/scholarships#ourobjective)
 6. [Google Lime and Google Europe Scholarship for Students with Disabilities]()
+7. [Masters HCI in Paris](https://www.universite-paris-saclay.fr/en/education/master/computer-science/m2-human-computer-interaction) - fin aid available [here](Eiffel Scholarship)
