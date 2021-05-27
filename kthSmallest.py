@@ -17,7 +17,9 @@ and if there is a room for optimization later, I will do it.
 
 '''
 
-def k_th_smallest(lst):
+# Initial Solution
+
+def k_th_smallest(k, lst):
   low = 0
   high = len(lst) - 1
   def merge_sort(lst, low, high):
@@ -39,6 +41,26 @@ def k_th_smallest(lst):
       elif len(right) > len(left):
           lst[i] = right[i]
       return lst
-   return merge_sort(lst, low, high)
+   return merge_sort(lst, low, high)[k-1]
       
 # Comment: might have errors will come back tomorrow to fix
+                     
+# Corrected Solution
+def k_th_smallest(k, l, r, lst):
+   if k > 0 and k <= r - l + 1:
+       pos = partition(lst, l, r)
+       if pos - l == k - 1:
+          return lst[pos]
+       elif pos - l > k - 1:
+          return k_th_smallest(k, l, pos - 1, lst)
+       return k_th_smallest(k - pos + l - 1, pos + 1, r, lst)
+   def partition(lst, left, right):
+       index = left
+       for i in range(left, right):
+           if lst[i] <= lst[right]:
+               lst[index], lst[i] = lst[i], lst[index]
+               index += 1
+       lst[index], lst[right] = lst[right], lst[index]
+       return index
+                     
+
