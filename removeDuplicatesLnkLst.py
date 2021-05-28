@@ -45,18 +45,16 @@ uniqueNodes = {1: Node<1>, 2: Node<2>, 3: Node<3>}
 '''
 
 # More optimal solution
-def removeDuplicatesSinglyLL(lnk_lst):
-  curr = lnk_lst.header.next
-  # iterate, O(n)
-  while curr.data is not None:
-    # check and move forward
-    if curr.data == curr.next.data:
-      # disconnect the node
-      new_node = curr.next.next
-      curr.next = None
-      curr.next = new_node
-    else:
-      curr = curr.next
+def deleteDuplicates(self, head: ListNode) -> ListNode:
+    curr = head
+    if curr is None:
+        return
+    while curr.next is not None:
+        if curr.val == curr.next.val:
+            curr.next = curr.next.next
+        else:
+            curr = curr.next
+    return head
       
 '''
 Test Case:
