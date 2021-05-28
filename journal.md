@@ -12,3 +12,6 @@ I was travelling back home, hence the long pause between my commits.
 
 ## May 26, 2021:
 - Problem: [Find the Kth smallest element in the array](https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1). My code [solution](https://github.com/ak7588/interviewPrep/blob/main/kthSmallest.py)
+
+## May 28, 2021:
+- Problem: [Remove Duplicates in a sorted Linked List](https://www.google.com/url?q=https://practice.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1&sa=D&source=editors&ust=1622208802808000&usg=AFQjCNFd9u0fJ6-8c0lKrXFACv6OlU9FNg). My [solution](https://github.com/ak7588/interviewPrep/blob/main/removeDuplicatesLnkLst.py)
