@@ -15,3 +15,7 @@ I was travelling back home, hence the long pause between my commits.
 
 ## May 28, 2021:
 - Problem: [Remove Duplicates in a sorted Linked List](https://www.google.com/url?q=https://practice.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1&sa=D&source=editors&ust=1622208802808000&usg=AFQjCNFd9u0fJ6-8c0lKrXFACv6OlU9FNg). My [solution](https://github.com/ak7588/interviewPrep/blob/main/removeDuplicatesLnkLst.py)
+
+## May 29, 2021:
+- Reverse First K elements of Queue - solved
+- Longest Common Subsequence - in progress
