@@ -17,6 +17,8 @@ Return true if n is a happy number, and false if not.
 
 '''
 
+# My initial solution
+
 def isHappy(self, n: int) -> bool:
 
     if n <= 0:
@@ -38,3 +40,20 @@ def isHappy(self, n: int) -> bool:
             return False
 
     return True
+
+# Corrected solution
+
+def isHappy(self, n: int) -> bool:
+    seenNumbers = {}
+    def helper(n, seenNumbers):
+        seenNumbers[n] = "seen"
+        currSum = 0
+        for num in str(n):
+            currSum += int(num)**2
+        if currSum == 1:
+            return True
+        elif currSum in seenNumbers:
+            return False
+        else:
+            return helper(currSum, seenNumbers)
+    return helper(n, seenNumbers)
