@@ -30,3 +30,23 @@ def longest_balanced(string):
     if len(opening) == len(closing) and len(opening) != 0:
       longestBalancedLength = len(opening) + len(closing)
   return longestBalancedLength
+
+def longest_balanced(string):
+  if string = '':
+      return 0
+  longestBalancedLength = 0
+  runningLength = 0
+  for i in len(string):
+
+      if string[i] == '(':
+          runningLength += 1
+      else:
+          runningLength -= 1
+
+      if runningLength < 0:
+          break
+
+      if runningLength == 0:
+          longestBalancedLength = i + 1
+
+      return longestBalancedLength
