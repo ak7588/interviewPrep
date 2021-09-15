@@ -31,10 +31,12 @@ def count_subarrays(arr):
     if index > 0:
       left_ind = 0
       right_ind = index
-      while arr[left_ind] < arr[index]:
+      while arr[left_ind] < arr[index] and left_ind < index:
         subarrays_count += 1
-      while arr[index] > arr[right_ind]
+        left_ind += 1
+      while arr[index] > arr[right_ind] and right_ind < len(arr)-1:
         subarrays_count += 1
+        right_ind += 1
     subarrays.append(subarrays_count)
   return subarrays
           
