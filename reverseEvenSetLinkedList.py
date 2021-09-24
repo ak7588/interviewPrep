@@ -13,3 +13,15 @@ Reversing:
   curr.next.next = temp
   
 """
+
+def reverse(head):
+  curr = head
+  while curr:
+    if curr.data % 2 == 0 and curr.next.data % 2 == 0:
+      temp = curr.next
+      curr.next = curr.next.next
+      curr.next.next = temp
+    curr = curr.next
+   return head
+      
+  
