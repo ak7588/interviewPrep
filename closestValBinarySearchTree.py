@@ -13,26 +13,13 @@ Algorithm:
 """
 
 def findClosestValueBST(root, target):
-  def findMaxAndMin(root):
+  def helper(root):
     if root is None:
-      return
-    stack = []
-    stack.append(root)
-    max_elem = root.data
-    min_elem = root.data
-    while len(stack) > 0:
-      curr = stack.pop()
-      if curr.data > max_data:
-        max_elem = curr.data
-      if curr.data < min_elem:
-        min_elem = curr.data
-      if curr.left is not None:
-        stack.append(curr.left)
-      if curr.right is not None:
-        stack.append(curr.right)
-    return max_elem, min_elem
-  max, min = findMaxAndMin(root)
-  if max > target and min < target:
-    # search
-  
-    
+      return None
+    if rounded(target) == root.data:
+      return root.data
+    if target > root.right.data:
+      helper(root.right)
+    if target < root.left.data:
+      helper(root.left)
+  return helper(root)
